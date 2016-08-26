@@ -1,0 +1,6 @@
+<h1>See attractions</h1>
+<%= @attractions.each do |attract| %>
+  <%= link_to "#{@intro} #{attract.name}", attraction_path(attract) %>
+<% end %>
+
+<%= link_to @link, new_attraction_path %>
